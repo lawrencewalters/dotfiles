@@ -32,8 +32,14 @@ this is your C:\Program Files (x86), most likely
 
 ## Usage
 
-run to_repo.sh to update the repo with your local host files. Once you have files in this repo (setup above), this will scan the src/ directories, and for every file found in this repo, it will look for the matching file on the host, and try to copy it to this repo.
+### to_repo.sh 
+
+to update the repo with your local host files. Once you have files in this repo (setup above), this will scan the src/ directories, and for every file found in this repo, it will look for the matching file on the host, and try to copy it to this repo.
 
 Note, if this is working, it will overwrite the file in this repo (which is the point)
 
-TODO: to_host.sh
+### to_host.sh
+
+copy from the repo to the host.
+
+use `-d` for a dry run to see what would be copied but not do anything
