@@ -1,54 +1,39 @@
 #!/bin/bash
-function my_unixpath() {
+ROOT=src/ #folder in repo relative to this script where everything is
+
+function unixpath() {
     echo "$1" \
     | sed -r \
       -e 's/\\/\//g' \
       -e 's/^([^:]+):/\/\1/'
 }
 
-recurse() {
- for i in "$1"/*;do
-    if [ -d "$i" ];then
-        echo "dir: $i"
-        recurse "$i"
-    elif [ -f "$i" ]; then
-        echo "file: $i"
-    fi
- done
-}
-
-copy_files() {
+# recursive function for finding files in repo, then copying from host to overwrite repo
+copy_to_repo() {
 	dir=$1
-	path_var=$2
-	unix_path=$3
-	#echo "$dir $path_var $unix_path"
-	# find the local system file that matches
-	# for each file in the repo
+	repo_path=$2
+	host_path=$3
 	
 	for f in "$dir"* "$dir".[^.]*; do
 		if [ -d "$f" ];then
-			unix_path=$unix_path/${f##*/}
-			path_var=$path_var/${f##*/}
-			copy_files "$f/" "$path_var" "$unix_path"
+			host_path=$host_path/${f##*/}
+			repo_path=$repo_path/${f##*/}
+			copy_to_repo "$f/" "$repo_path" "$host_path"
     elif [ -f "$f" ]; then
-			echo "  $unix_path/${f##*/}"
-			#echo "    cp \"$unix_path/${f##*/}\" \"src/$path_var/${f##*/}\""
-			# overwrite the repo file with the local system file	
-			eval "cp \"$unix_path/${f##*/}\" \"src/$path_var/${f##*/}\""
+			echo "  $host_path/${f##*/}"
+			eval "cp \"$host_path/${f##*/}\" \"$ROOT$repo_path/${f##*/}\""
     fi
 	done
 }
 
 # look through folders in /src
 # for each dir with a matching local var set by msysgit(USERPROFILE)
-for dir in src/*/ ; do
-	path_var=${dir%/}
-	path_var=${path_var#src/}
-	expanded_path=${!path_var}
-	unix_path=$(my_unixpath "$expanded_path")
-	echo "$path_var: $unix_path"
-	# find the local system file that matches
-	# for each file in the repo
-	copy_files "$dir" "$path_var" "$unix_path"
+for dir in $ROOT*/ ; do
+	windows_path_var=${dir%/}
+	repo_path=${windows_path_var#$ROOT}
+	expanded_windows_path=${!repo_path}
+	host_path=$(unixpath "$expanded_windows_path")
+	echo "$repo_path: $host_path"
+	copy_to_repo "$dir" "$repo_path" "$host_path"
 done
 
