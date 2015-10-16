@@ -37,11 +37,3 @@ run to_repo.sh to update the repo with your local host files. Once you have file
 Note, if this is working, it will overwrite the file in this repo (which is the point)
 
 TODO: to_host.sh
-
-
-
-
-
-### USERPROFILE
-
-your home directory. sync
