@@ -1,0 +1,50 @@
+{
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+    "vim.useSystemClipboard": true,
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors": {
+        "normal": "#005f5f",
+        "insert": "#5f0000",
+        "visual": "#5f00af",
+        "visualline": "#005f87",
+        "visualblock": "#86592d",
+        "searchinprogressmode": "#100000",
+        "replace": "#000000"
+    },
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "vscode-open-project.projects": {
+        "project": "C:\\users\\lwalters\\docs\\proj",
+        "ashley": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\ashley-furniture",
+        "borderfree": "C:\\users\\lwalters\\bitbucket.org\\pbi",
+        "colony": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\colony-brands"
+    },
+    "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}${separator}${appName}",
+    "window.zoomLevel": 0,
+    "editor.wordWrap": "on",
+    "vim.handleKeys": {
+        "<C-n>": false,
+        "<C-h>": false,
+        "<C-w>": false
+    },
+    "editor.renderWhitespace": "none",
+    "editor.detectIndentation": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.minimap.enabled": false,
+    "vim.foldfix": true,
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["leader", "p"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.showCommands",
+                    "args": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-# aliases
+# aliases asdfasdf
 source ~/dotfiles/shell_profile/alias
 
 # ssh agent
