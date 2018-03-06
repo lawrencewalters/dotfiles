@@ -1,0 +1,12 @@
+npp() {
+    "/C/Program Files (x86)/notepad++/notepad++.exe" $* &
+}
+
+timesheet() {
+    node ~/github.com/lawrencewalters/timesheets/timesheet.js ~/docs/proj/timesheet_data.txt
+}
+
+alias g=git
+alias c=code
+alias tm=timesheet
+alias ash="cd ~/bitbucket.org/lyonsconsultinggroup/ashley-furniture"

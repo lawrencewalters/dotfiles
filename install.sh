@@ -2,6 +2,8 @@
 
 set -eu
 
+export MSYS=winsymlinks:nativestrict
+
 DOTDIR="${HOME}/dotfiles"
 BINDIR="${HOME}/bin"
 
