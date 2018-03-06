@@ -20,26 +20,25 @@
 	untracked = cyan
 [core]
 	excludesfile = ~/.gitignore
-    editor = code --wait
-    autocrlf = true
+	editor = code --wait
+	autocrlf = true
 [status]
 	submodulesummary = true
 	relativePaths = false
 [alias]
 	l = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-    ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
 	last = log -1 HEAD
 	p = push
 	b = branch
-    bf = "!git branch -r| grep -i"
+	bf = "!git branch -r| grep -i"
 	s = status
 	r = reset HEAD --
 	f = fetch
-    gr = grep -Ii
-    co = checkout
-    ci = commit
-    a = add
-    am = amend
+	gr = grep -Ii
+	co = checkout
+	ci = commit
+	a = add
 [gui]
 	pruneduringfetch = true

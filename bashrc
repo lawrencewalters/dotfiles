@@ -28,7 +28,7 @@ function color_my_prompt {
     fi
     echo -e " $__git_branch_color(${ref#refs/heads/}${dirty})"
 }
-export PS1='\033[33m\W$(color_my_prompt) \033[00m$ '
+export PS1='\[\033[33m\]\W$(color_my_prompt) \[\033[00m\]$ '
 
 if [[ $PROMPT_COMMAND == *"history -a; history -c; history -r;"* ]]; then
   echo "It's there!"
