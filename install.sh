@@ -29,12 +29,17 @@ cautious_link () {
 #   fi
 # }
 
-for f in gitconfig bashrc; do
+for f in gitconfig gitignore bashrc profile; do
   cautious_link "${HOME}/dotfiles/${f}" "${HOME}/.${f}"
+done
+
+for f in ConEmu.xml; do
+  cautious_link "${HOME}/dotfiles/${f}" "${HOME}/${f}"
 done
 
 cautious_link "${HOME}/dotfiles/AppData/Roaming/Code/User/settings.json" "${HOME}/AppData/Roaming/Code/User/settings.json"
 
+#TODO: keypirinha, C:\Users\lwalters\AppData\Roaming\Keypirinha\User, C:\Users\lwalters\AppData\Roaming\Notepad++
 #for x in ./bin/*; do
 #  cautious_link_bin "${x}"
 #done

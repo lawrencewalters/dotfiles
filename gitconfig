@@ -20,9 +20,7 @@
 	untracked = cyan
 [core]
 	excludesfile = ~/.gitignore
-	# editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
-    editor = code
-	excludesfile = ~/.gitignore_global
+    editor = code --wait
     autocrlf = true
 [status]
 	submodulesummary = true
@@ -39,7 +37,9 @@
 	r = reset HEAD --
 	f = fetch
     gr = grep -Ii
-    ch = checkout
-    co = commit
+    co = checkout
+    ci = commit
+    a = add
+    am = amend
 [gui]
 	pruneduringfetch = true
