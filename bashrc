@@ -13,22 +13,30 @@ shopt -s histappend
 # \[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$
 #  PS1="\\[\\033[01;34m\\]\\w \\[\\033[31m\\]\`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\\\\\\*\\ \\(.+\\)\$/\\(\\\\\\\\\\1\\)\\ /\`\\[\\033[35m\\]\$\\[\\033[00m\\]
 function color_my_prompt {
-    # local __cur_location="\033[33m ${PWD##*/}"
-    #local __git_branch="\`ruby -e \"print (%x{git branch 2> /dev/null}.grep(/^\*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`"
-    # local __git_branch='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
+    local __cur_location="\033[33m\w\033[00m"
     # local __prompt_tail="\[\033[35m\]"
     local ref=$(git symbolic-ref HEAD 2>/dev/null)
-    if [ -z $ref ]; then return; fi
+    if [ -z $ref ]; then 
+        echo "$__cur_location"
+        return; 
+    fi
+
     if [[ -n $(git status -s 2>/dev/null) ]]; then
-        local __git_branch_color="\033[31m"
+        local __git_branch_color="\[\033[31m\]"
         local dirty="*"
     else
-        local __git_branch_color="\033[36m"
+        local __git_branch_color="\[\033[36m\]"
         local dirty=""
     fi
-    echo -e " $__git_branch_color(${ref#refs/heads/}${dirty})"
+    echo "$__cur_location $__git_branch_color(${ref#refs/heads/}${dirty})\[\033[00m\]"
 }
-export PS1='\[\033[33m\]\W$(color_my_prompt) \[\033[00m\]$ '
+
+set_bash_prompt() {
+    PS1="$(color_my_prompt)\n$ "
+}
+
+#export PS1='($color_my_prompt) $ '
+PROMPT_COMMAND=set_bash_prompt
 
 if [[ $PROMPT_COMMAND == *"history -a; history -c; history -r;"* ]]; then
   echo "It's there!"
