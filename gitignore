@@ -15,6 +15,9 @@ jsconfig.json
 bin/
 obj/
 
+#lyonscg gulp
+gulp_builder/artifacts/*
+
 #PETSMART
 code/cartridges/app_petsmart_core/cartridge/static/default/css/style.css
 code/cartridges/app_petsmart_core/cartridge/static/default/js/app.js
