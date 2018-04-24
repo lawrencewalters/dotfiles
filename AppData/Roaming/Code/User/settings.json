@@ -1,8 +1,8 @@
 {
     "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+        "statusBar.background": "#5f00af",
+        "statusBar.noFolderBackground": "#5f00af",
+        "statusBar.debuggingBackground": "#5f00af"
     },
     "vim.useSystemClipboard": true,
     "vim.statusBarColorControl": true,
@@ -23,7 +23,7 @@
         "colony": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\colony-brands"
     },
     "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}${separator}${appName}",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "editor.wordWrap": "on",
     "vim.handleKeys": {
         "<C-n>": false,
@@ -36,6 +36,16 @@
     "editor.minimap.enabled": false,
     "vim.foldfix": true,
     "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["leader", "b"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleSidebarVisibility",
+                    "args": []
+                }
+            ]
+        },
         {
             "before": ["leader", "p"],
             "after": [],
@@ -62,5 +72,5 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
-    "workbench.statusBar.feedback.visible": false
+    "workbench.statusBar.feedback.visible": false,
 }
