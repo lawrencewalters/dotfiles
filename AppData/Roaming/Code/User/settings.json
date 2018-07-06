@@ -1,8 +1,8 @@
 {
     "workbench.colorCustomizations": {
-        "statusBar.background": "#5f00af",
-        "statusBar.noFolderBackground": "#5f00af",
-        "statusBar.debuggingBackground": "#5f00af"
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
     },
     "vim.useSystemClipboard": true,
     "vim.statusBarColorControl": true,
@@ -73,4 +73,5 @@
         "suppressShowKeyBindingsNotice": true
     },
     "workbench.statusBar.feedback.visible": false,
+    "gitlens.historyExplorer.enabled": true,
 }
