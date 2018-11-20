@@ -29,7 +29,7 @@ cautious_link () {
 #   fi
 # }
 
-for f in gitconfig gitignore bashrc profile vimfiles; do
+for f in gitconfig gitignore bashrc profile vimrc; do
   cautious_link "${HOME}/dotfiles/${f}" "${HOME}/.${f}"
 done
 

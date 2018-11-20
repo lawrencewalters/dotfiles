@@ -20,7 +20,9 @@
         "project": "C:\\users\\lwalters\\docs\\proj",
         "ashley": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\ashley-furniture",
         "borderfree": "C:\\users\\lwalters\\bitbucket.org\\pbi",
-        "colony": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\colony-brands"
+        "colony": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\colony-brands",
+        "gamestop": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\gamestop",
+        "ref-app": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\reference-application-sfra"
     },
     "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}${separator}${appName}",
     "window.zoomLevel": 1,

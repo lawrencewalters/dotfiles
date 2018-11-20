@@ -9,6 +9,6 @@ timesheet() {
 alias g=git
 alias c=code
 alias tm=timesheet
-alias ash="cd ~/bitbucket.org/lyonsconsultinggroup/ashley-furniture"
+alias ash="cd ~/visualstudio.com/ashleyfurniture/ecommerce-website"
 alias col="cd ~/bitbucket.org/lyonsconsultinggroup/colony-brands"
 alias xml="cd ~/bitbucket.org/lwalters/colony-brands/xml"

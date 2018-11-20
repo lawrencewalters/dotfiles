@@ -42,3 +42,5 @@
 	a = add
 [gui]
 	pruneduringfetch = true
+[winUpdater]
+	recentlySeenVersion = 2.19.1.windows.1
