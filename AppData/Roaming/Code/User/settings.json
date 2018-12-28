@@ -18,7 +18,7 @@
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "vscode-open-project.projects": {
         "project": "C:\\users\\lwalters\\docs\\proj",
-        "ashley": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\ashley-furniture",
+        "ashley": "C:\\users\\lwalters\\visualstudio.com\\ashleyfurniture\\ecommerce-website",
         "borderfree": "C:\\users\\lwalters\\bitbucket.org\\pbi",
         "colony": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\colony-brands",
         "gamestop": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\gamestop",
@@ -32,7 +32,7 @@
         "<C-h>": false,
         "<C-w>": false
     },
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
     "editor.detectIndentation": false,
     "workbench.startupEditor": "newUntitledFile",
     "editor.minimap.enabled": false,
@@ -76,4 +76,7 @@
     },
     "workbench.statusBar.feedback.visible": false,
     "gitlens.historyExplorer.enabled": true,
+    "explorer.confirmDelete": false,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
 }

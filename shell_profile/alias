@@ -12,3 +12,5 @@ alias tm=timesheet
 alias ash="cd ~/visualstudio.com/ashleyfurniture/ecommerce-website"
 alias col="cd ~/bitbucket.org/lyonsconsultinggroup/colony-brands"
 alias xml="cd ~/bitbucket.org/lwalters/colony-brands/xml"
+alias xsd="~/docs/sfcc/schema"
+alias lintcat="xmllint --schema ~/docs/sfcc/schema/catalog.xsd"
