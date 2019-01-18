@@ -21,18 +21,19 @@
         "ashley": "C:\\users\\lwalters\\visualstudio.com\\ashleyfurniture\\ecommerce-website",
         "borderfree": "C:\\users\\lwalters\\bitbucket.org\\pbi",
         "colony": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\colony-brands",
+        "fossil":"C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\fossil",
         "gamestop": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\gamestop",
         "ref-app": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\reference-application-sfra"
     },
     "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}${separator}${appName}",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "editor.wordWrap": "on",
     "vim.handleKeys": {
         "<C-n>": false,
         "<C-h>": false,
         "<C-w>": false
     },
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "none",
     "editor.detectIndentation": false,
     "workbench.startupEditor": "newUntitledFile",
     "editor.minimap.enabled": false,
