@@ -1,16 +1,27 @@
-npp() {
-    "/C/Program Files (x86)/notepad++/notepad++.exe" $* &
-}
+if [ "$(uname)" == "Darwin" ]; then
+    # Do something under Mac OS X platform        
+    echo "1"
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    # Do something under GNU/Linux platform
+    export USERHOME='/mnt/c/Users/$USER'   
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+    # Do something under 32 bits Windows NT platform
+    export USERHOME='/c/Users/$USERNAME'
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ]; then
+    # Do something under 64 bits Windows NT platform
+    export USERHOME='c/Users/$USERNAME'
+fi
 
-timesheet() {
-    node ~/github.com/lawrencewalters/timesheets/timesheet.js ~/docs/proj/timesheet_data.txt
-}
+#timesheet() {
+#    node ~/github.com/lawrencewalters/timesheets/timesheet.js ~/docs/proj/timesheet_data.txt
+#}
 
+alias timesheet="node $USERHOME/github.com/lawrencewalters/timesheets/timesheet.js $USERHOME/docs/proj/timesheet_data.txt"
 alias g=git
 alias c=code
-alias tm=timesheet
-alias ash="cd ~/visualstudio.com/ashleyfurniture/ecommerce-website"
-alias col="cd ~/bitbucket.org/lyonsconsultinggroup/colony-brands"
-alias xml="cd ~/bitbucket.org/lwalters/colony-brands/xml"
-alias xsd="~/docs/sfcc/schema"
-alias lintcat="xmllint --schema ~/docs/sfcc/schema/catalog.xsd"
+#alias tm=timesheet
+alias ash="cd $USERHOME/visualstudio.com/ashleyfurniture/ecommerce-website"
+alias col="cd $USERHOME/bitbucket.org/lyonsconsultinggroup/colony-brands"
+alias xml="cd $USERHOME/bitbucket.org/lwalters/colony-brands/xml"
+alias xsd="$USERHOME/docs/sfcc/schema"
+alias lintcat="xmllint --schema $USERHOME/docs/sfcc/schema/catalog.xsd"
