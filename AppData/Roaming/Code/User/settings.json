@@ -80,5 +80,5 @@
     "explorer.confirmDelete": false,
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
-    "files.eol": "\n"
+    "files.eol": "\n",
 }
