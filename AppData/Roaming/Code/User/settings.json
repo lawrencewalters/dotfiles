@@ -15,7 +15,7 @@
         "searchinprogressmode": "#100000",
         "replace": "#000000"
     },
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
     "vscode-open-project.projects": {
         "project": "C:\\users\\lwalters\\docs\\proj",
         "ashley": "C:\\users\\lwalters\\visualstudio.com\\ashleyfurniture\\ecommerce-website",
@@ -80,4 +80,5 @@
     "explorer.confirmDelete": false,
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
+    "files.eol": "\n"
 }

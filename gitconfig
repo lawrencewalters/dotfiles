@@ -1,8 +1,6 @@
 [user]
 	name = Lawrence Walters
 	email = lwalters@lyonscg.com
-[credential]
-	helper = manager
 [color]
  	ui = auto
 [color "branch"]
@@ -21,7 +19,7 @@
 [core]
  	excludesfile = ~/.gitignore
  	editor = code --wait
- 	autocrlf = true
+ 	autocrlf = input
 # [status]
 	# submodulesummary = true
 	# relativePaths = false
