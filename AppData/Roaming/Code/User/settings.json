@@ -1,43 +1,34 @@
 {
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
-    },
-    "vim.useSystemClipboard": true,
-    "vim.statusBarColorControl": true,
-    "vim.statusBarColors": {
-        "normal": "#005f5f",
-        "insert": "#5f0000",
-        "visual": "#5f00af",
-        "visualline": "#005f87",
-        "visualblock": "#86592d",
-        "searchinprogressmode": "#100000",
-        "replace": "#000000"
-    },
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
-    "vscode-open-project.projects": {
-        "project": "C:\\users\\lwalters\\docs\\proj",
-        "ashley": "C:\\users\\lwalters\\visualstudio.com\\ashleyfurniture\\ecommerce-website",
-        "borderfree": "C:\\users\\lwalters\\bitbucket.org\\pbi",
-        "colony": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\colony-brands",
-        "fossil":"C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\fossil",
-        "gamestop": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\gamestop",
-        "ref-app": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\reference-application-sfra"
-    },
-    "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}${separator}${appName}",
-    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false,
     "editor.wordWrap": "on",
+    "editor.renderWhitespace": "none",
+    "editor.detectIndentation": false,
+    "editor.minimap.enabled": false,
+    "files.eol": "\n",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.keymap": "alternate",
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontFamily": "Consolas",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
+    "vim.foldfix": true,
     "vim.handleKeys": {
         "<C-n>": false,
         "<C-h>": false,
         "<C-w>": false
     },
-    "editor.renderWhitespace": "none",
-    "editor.detectIndentation": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.minimap.enabled": false,
-    "vim.foldfix": true,
     "vim.otherModesKeyBindingsNonRecursive": [
         {
             "before": ["leader", "b"],
@@ -60,25 +51,33 @@
             ]
         }
     ],
-    "gitlens.keymap": "alternate",
-    "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontFamily": "Consolas",
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true
+    "vim.useSystemClipboard": true,
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors": {
+        "normal": "#005f5f",
+        "insert": "#5f0000",
+        "visual": "#5f00af",
+        "visualline": "#005f87",
+        "visualblock": "#86592d",
+        "searchinprogressmode": "#100000",
+        "replace": "#000000"
     },
-    "workbench.statusBar.feedback.visible": false,
-    "gitlens.historyExplorer.enabled": true,
-    "explorer.confirmDelete": false,
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
-    "files.eol": "\n",
+    "vscode-open-project.projects": {
+        "project": "C:\\users\\lwalters\\docs\\proj",
+        "ashley": "C:\\users\\lwalters\\visualstudio.com\\ashleyfurniture\\ecommerce-website",
+        "borderfree": "C:\\users\\lwalters\\bitbucket.org\\pbi",
+        "colony": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\colony-brands",
+        "fossil":"C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\fossil",
+        "gamestop": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\gamestop",
+        "ref-app": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\reference-application-sfra"
+    },
+    "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}${separator}${appName}",
+    "window.zoomLevel": 0,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+    "workbench.statusBar.feedback.visible": false
 }
