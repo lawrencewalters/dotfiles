@@ -6,7 +6,7 @@
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 
 # aliases 
-source ~/dotfiles/shell_profile/alias
+source /mnt/c/Users/lwalters/dotfiles/linux/shell_profile/alias
 
 # ssh agent
 if [ -f $HOME/.ssh/start-agent.sh ]; then
@@ -50,3 +50,5 @@ if [[ $PROMPT_COMMAND == *"history -a; history -c; history -r;"* ]]; then
 else
   export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -5,7 +5,8 @@ set -eu
 export MSYS=winsymlinks:nativestrict
 
 
-DOTDIR="${WINHOME}/dotfiles"
+DOTDIR="/mnt/c/Users/lwalters/dotfiles"
+LINUXDIR="/mnt/c/Users/lwalters/dotfiles/linux"
 BINDIR="${HOME}/bin"
 
 noisy_link () {
@@ -30,12 +31,16 @@ cautious_link () {
 #   fi
 # }
 
-for f in gitconfig gitignore bashrc profile vimrc; do
+for f in bashrc profile vimrc; do
+  cautious_link "${LINUXDIR}/${f}" "${HOME}/.${f}"
+done
+
+for f in gitconfig gitignore; do
   cautious_link "${DOTDIR}/${f}" "${HOME}/.${f}"
 done
 
-cautious_link "${DOTDIR}/dotfiles/AppData/Roaming/Code/User/settings.json" "${HOME}/AppData/Roaming/Code/User/settings.json"
-cautious_link "${DOTDIR}/dotfiles/AppData/Roaming/ConEmu.xml" "${HOME}/AppData/Roaming/ConEmu.xml"
+#cautious_link "${DOTDIR}/dotfiles/AppData/Roaming/Code/User/settings.json" "${HOME}/AppData/Roaming/Code/User/settings.json"
+#cautious_link "${DOTDIR}/dotfiles/AppData/Roaming/ConEmu.xml" "${HOME}/AppData/Roaming/ConEmu.xml"
 
 #TODO: keypirinha, C:\Users\lwalters\AppData\Roaming\Keypirinha\User, C:\Users\lwalters\AppData\Roaming\Notepad++
 #for x in ./bin/*; do
