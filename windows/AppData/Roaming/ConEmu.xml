@@ -699,8 +699,13 @@
 				<value name="Count" type="long" data="0"/>
 			</key>
 			<value name="CmdLineHistory" type="multi">
+<<<<<<< HEAD:windows/AppData/Roaming/ConEmu.xml
 				<line data="{Shells::PowerShell (Admin)}"/>
 				<line data="{Shells::cmd (Admin)}"/>
+=======
+				<line data="{Shells::cmd (Admin)}"/>
+				<line data="{Shells::PowerShell (Admin)}"/>
+>>>>>>> e61211c79c3ef317d92a5ac25790618bda8ce41f:AppData/Roaming/ConEmu.xml
 				<line data="{Bash::bash}"/>
 				<line data="{Shells::cmd}"/>
 				<line data="{Bash::Git bash}"/>

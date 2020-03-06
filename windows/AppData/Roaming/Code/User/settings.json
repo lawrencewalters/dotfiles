@@ -29,7 +29,7 @@
         "<C-w>": false,
         "<C-b>": false
     },
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["leader", "b"],
             "after": [],
@@ -52,6 +52,7 @@
         }
     ],
     "vim.useSystemClipboard": true,
+    "vim.surround": true,
     "vim.statusBarColorControl": true,
     "vim.statusBarColors": {
         "normal": "#005f5f",
@@ -68,15 +69,15 @@
         "ref-app": "C:\\Users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\reference-application-sfra",
         "ashley": "C:\\Users\\lwalters\\dev.azure.com\\ashleyfurniture\\ecommerce-website",
         "borderfree": "C:\\Users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\Borderfree\\BorderfreeLink.code-workspace",
-        "fossil":"C:\\Users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\fossil",
+        "fossil":"C:\\Users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\fossil"
     },
     "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}${separator}${appName}",
     "window.zoomLevel": 1,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#5f00af",
-        "statusBar.noFolderBackground": "#5f00af",
-        "statusBar.debuggingBackground": "#5f00af",
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f",
         "editorWhitespace.foreground": "#8806065b"
     },
     "files.exclude": {
@@ -97,9 +98,6 @@
     "java.configuration.checkProjectSettingsExclusions": false,
     "editor.renderControlCharacters": true,
     "extensions.ignoreRecommendations": false,
-    "[html]": {
-        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
-    },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
