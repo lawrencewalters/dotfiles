@@ -1,9 +1,8 @@
 {
     "explorer.confirmDelete": false,
     "editor.wordWrap": "on",
-    "editor.renderWhitespace": "none",
-    "editor.detectIndentation": false,
-    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": true,
     "files.eol": "\n",
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
@@ -27,7 +26,8 @@
     "vim.handleKeys": {
         "<C-n>": false,
         "<C-h>": false,
-        "<C-w>": false
+        "<C-w>": false,
+        "<C-b>": false
     },
     "vim.otherModesKeyBindingsNonRecursive": [
         {
@@ -63,21 +63,53 @@
         "replace": "#000000"
     },
     "vscode-open-project.projects": {
-        "project": "C:\\users\\lwalters\\docs\\proj",
-        "ashley": "C:\\users\\lwalters\\visualstudio.com\\ashleyfurniture\\ecommerce-website",
-        "borderfree": "C:\\users\\lwalters\\bitbucket.org\\pbi",
-        "colony": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\colony-brands",
-        "fossil":"C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\fossil",
-        "gamestop": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\gamestop",
-        "ref-app": "C:\\users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\reference-application-sfra"
+        "project": "C:\\Users\\lwalters\\docs\\proj",
+        "horizon": "C:\\Users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\horizonhobby",
+        "ref-app": "C:\\Users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\reference-application-sfra",
+        "ashley": "C:\\Users\\lwalters\\dev.azure.com\\ashleyfurniture\\ecommerce-website",
+        "borderfree": "C:\\Users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\Borderfree\\BorderfreeLink.code-workspace",
+        "fossil":"C:\\Users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\fossil",
     },
     "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}${separator}${appName}",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+        "statusBar.background": "#5f00af",
+        "statusBar.noFolderBackground": "#5f00af",
+        "statusBar.debuggingBackground": "#5f00af",
+        "editorWhitespace.foreground": "#8806065b"
     },
-    "workbench.statusBar.feedback.visible": false
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.settings": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[java]": {
+        
+    },
+    "[isml]": {
+        
+    },
+    "editor.detectIndentation": false,
+    "extension.prophet.htmlhint.enabled": false,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "editor.renderControlCharacters": true,
+    "extensions.ignoreRecommendations": false,
+    "[html]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "json.format.enable": false,
+    "editor.formatOnSave": true,
+    "plantuml.render": "PlantUMLServer",
+    "plantuml.server": "http://localhost:8080/plantuml/",
+    "plantuml.exportFormat": "svg",
+    "editor.trimAutoWhitespace": false
 }

@@ -1,0 +1,68 @@
+<SmartNavSettings>
+  <CursorSettings>
+    <linkXY>0</linkXY>
+    <xSpeed>2</xSpeed>
+    <ySpeed>3</ySpeed>
+    <xSmoothing>40</xSmoothing>
+    <ySmoothing>40</ySmoothing>
+    <invertX>0</invertX>
+    <invertY>0</invertY>
+    <rotationAngle>zero</rotationAngle>
+    <motionMode>relative</motionMode>
+  </CursorSettings>
+  <ClickSettings>
+    <HotKeys>
+      <Key name= "LWin" virtualKeyCode="91" enabled="1" sticky="0" >0</Key>
+      <Key name= "RWin" virtualKeyCode="92" enabled="1" sticky="0" >1</Key>
+      <Key name= "F7" virtualKeyCode="118" enabled="1" sticky="0" >2</Key>
+      <Key name= "F12" virtualKeyCode="123" enabled="1" sticky="0" >3</Key>
+      <Key name= "F11" virtualKeyCode="122" enabled="1" sticky="0" >4</Key>
+      <Key name= "F9" virtualKeyCode="120" enabled="1" sticky="1" >5</Key>
+      <Key name= "F8" virtualKeyCode="119" enabled="1" sticky="0" >6</Key>
+      <Key name= "0" virtualKeyCode="0" enabled="0" sticky="1" >7</Key>
+      <Key name= "0" virtualKeyCode="0" enabled="0" sticky="1" >8</Key>
+      <Key name= "0" virtualKeyCode="0" enabled="0" sticky="1" >9</Key>
+      <Key name= "0" virtualKeyCode="0" enabled="0" sticky="1" >10</Key>
+      <Key name= "0" virtualKeyCode="0" enabled="0" sticky="1" >11</Key>
+      <Key name= "0" virtualKeyCode="0" enabled="0" sticky="1" >12</Key>
+    </HotKeys>
+    <Switchs>
+      <Switch number="one" hotKey="1" sticky="0" />
+      <Switch number="two" hotKey="0" sticky="0" />
+    </Switchs>
+    <showDwellClickingToolbar>0</showDwellClickingToolbar>
+    <doublClickAssist>1</doublClickAssist>
+    <speechReco>0</speechReco>
+  </ClickSettings>
+  <CursorBehavior>
+    <useGravity>0</useGravity>
+    <keyActivated>0</keyActivated>
+    <startAtCenter>0</startAtCenter>
+    <clickOnRelease>0</clickOnRelease>
+    <mouseOverrideDelay>1000</mouseOverrideDelay>
+    <CursorGravity>
+      <controlBoxes>1</controlBoxes>
+      <buttons>1</buttons>
+      <menus>1</menus>
+      <icons>1</icons>
+      <listCtrlItems>1</listCtrlItems>
+      <SnapTime>200</SnapTime>
+      <StickTime>500</StickTime>
+    </CursorGravity>
+    <keyboardOverrideDelay>0</keyboardOverrideDelay>
+  </CursorBehavior>
+  <TrackingSettings>
+    <CameraLEDs>1</CameraLEDs>
+    <ObjectSize>100</ObjectSize>
+    <Preset>1</Preset>
+    <ModifyCameraThreshold>0</ModifyCameraThreshold>
+    <CameraThreshold>100</CameraThreshold>
+  </TrackingSettings>
+  <Setup>
+    <runAtStartup>0</runAtStartup>
+    <runMinimized>0</runMinimized>
+    <minimizeToTray>0</minimizeToTray>
+    <showMini>0</showMini>
+    <profile>Default Slow</profile>
+  </Setup>
+</SmartNavSettings>
