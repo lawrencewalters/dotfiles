@@ -12,16 +12,13 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ]; then
     export USERHOME='c/Users/$USERNAME'
 fi
 
-#timesheet() {
-#    node ~/github.com/lawrencewalters/timesheets/timesheet.js ~/docs/proj/timesheet_data.txt
-#}
-
-alias timesheet="node $USERHOME/github.com/lawrencewalters/timesheets/timesheet.js $USERHOME/docs/proj/timesheet_data.txt"
 alias g=git
 alias c=code
-#alias tm=timesheet
-alias ash="cd $USERHOME/visualstudio.com/ashleyfurniture/ecommerce-website"
-alias col="cd $USERHOME/bitbucket.org/lyonsconsultinggroup/colony-brands"
-alias xml="cd $USERHOME/bitbucket.org/lwalters/colony-brands/xml"
 alias xsd="$USERHOME/docs/sfcc/schema"
 alias lintcat="xmllint --schema $USERHOME/docs/sfcc/schema/catalog.xsd"
+alias lw="cd $USERHOME/github.com/lawrencewalters"
+alias sf="cd $USERHOME/github.com/SalesforceCommerceCloud"
+alias la="ls -al"
+alias ts="node /mnt/c/Users/lwalters/github.com/lawrencewalters/timesheets/timesheet.js /mnt/c/Users/lwalters/docs/proj/time-entries.txt"
+alias gte="python3 /mnt/c/Users/lwalters/github.com/lawrencewalters/gte-automation/gte_automation.py -e /mnt/c/Users/lwalters/docs/proj/time-entries.txt -m /mnt/c/Users/lwalters/docs/proj/time-mapping.json --update"
+
