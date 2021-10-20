@@ -18,7 +18,7 @@
  	untracked = cyan
 [core]
  	excludesfile = ~/.gitignore
- 	editor = code --wait
+ 	editor = vim
  	autocrlf = input
 # [status]
 	# submodulesummary = true
@@ -42,3 +42,5 @@
 	pruneduringfetch = true
 [winUpdater]
 	recentlySeenVersion = 2.20.1.windows.1
+[rerere]
+	enabled = true
