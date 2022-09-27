@@ -20,5 +20,4 @@ alias lw="cd $USERHOME/github.com/lawrencewalters"
 alias sf="cd $USERHOME/github.com/SalesforceCommerceCloud"
 alias la="ls -al"
 alias ts="node /mnt/c/Users/lwalters/github.com/lawrencewalters/timesheets/timesheet.js /mnt/c/Users/lwalters/docs/proj/time-entries.txt"
-alias gte="python3 /mnt/c/Users/lwalters/github.com/lawrencewalters/gte-automation/gte_automation.py -e /mnt/c/Users/lwalters/docs/proj/time-entries.txt -m /mnt/c/Users/lwalters/docs/proj/time-mapping.json --update"
 
