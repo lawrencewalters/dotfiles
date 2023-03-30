@@ -1,113 +1,90 @@
 {
-    "explorer.confirmDelete": false,
-    "editor.wordWrap": "on",
-    "editor.renderWhitespace": "all",
-    "editor.minimap.enabled": true,
-    "files.eol": "\n",
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true
-    },
-    "gitlens.keymap": "alternate",
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
-    "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontFamily": "Consolas",
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
-    "vim.foldfix": true,
-    "vim.handleKeys": {
-        "<C-n>": false,
-        "<C-h>": false,
-        "<C-w>": false,
-        "<C-b>": false
-    },
-    "vim.normalModeKeyBindingsNonRecursive": [
+  "explorer.confirmDelete": false,
+  "editor.wordWrap": "on",
+  "editor.renderWhitespace": "all",
+  "editor.minimap.enabled": true,
+  "files.eol": "\n",
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false
+  },
+  "gitlens.keymap": "alternate",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontFamily": "Consolas",
+  "vim.foldfix": true,
+  "vim.handleKeys": {
+    "<C-n>": false,
+    "<C-h>": false,
+    "<C-w>": false,
+    "<C-b>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["leader", "b"],
+      "after": [],
+      "commands": [
         {
-            "before": ["leader", "b"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.toggleSidebarVisibility",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": ["leader", "p"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.showCommands",
-                    "args": []
-                }
-            ]
+          "command": "workbench.action.toggleSidebarVisibility",
+          "args": []
         }
-    ],
-    "vim.useSystemClipboard": true,
-    "vim.surround": true,
-    "vim.statusBarColorControl": true,
-    "vim.statusBarColors": {
-        "normal": "#005f5f",
-        "insert": "#5f0000",
-        "visual": "#5f00af",
-        "visualline": "#005f87",
-        "visualblock": "#86592d",
-        "searchinprogressmode": "#100000",
-        "replace": "#000000"
+      ]
     },
-    "vscode-open-project.projects": {
-        "project": "C:\\Users\\lwalters\\docs\\proj",
-        "horizon": "C:\\Users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\horizonhobby",
-        "ref-app": "C:\\Users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\reference-application-sfra",
-        "ashley": "C:\\Users\\lwalters\\dev.azure.com\\ashleyfurniture\\ecommerce-website",
-        "borderfree": "C:\\Users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\Borderfree\\BorderfreeLink.code-workspace",
-        "fossil":"C:\\Users\\lwalters\\bitbucket.org\\lyonsconsultinggroup\\fossil"
-    },
-    "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}${separator}${appName}",
-    "window.zoomLevel": 1,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f",
-        "editorWhitespace.foreground": "#8806065b"
-    },
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.factorypath": true,
-        "**/.settings": true
-    },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "[java]": {
-        
-    },
-    "[isml]": {
-        
-    },
-    "editor.detectIndentation": false,
-    "extension.prophet.htmlhint.enabled": false,
-    "java.configuration.checkProjectSettingsExclusions": false,
-    "editor.renderControlCharacters": true,
-    "extensions.ignoreRecommendations": false,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "json.format.enable": false,
-    "editor.formatOnSave": true,
-    "plantuml.render": "PlantUMLServer",
-    "plantuml.server": "http://localhost:8080/plantuml/",
-    "plantuml.exportFormat": "svg",
-    "editor.trimAutoWhitespace": false
+    {
+      "before": ["leader", "p"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.showCommands",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "vim.useSystemClipboard": true,
+  "vim.surround": true,
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": "#005f5f",
+  "vim.statusBarColors.insert": "#5f0000",
+  "vim.statusBarColors.visual": "#5f00af",
+  "vim.statusBarColors.visualline": "#005f87",
+  "vim.statusBarColors.visualblock": "#86592d",
+  "vim.statusBarColors.searchinprogressmode": "#100000",
+  "vim.statusBarColors.replace": "#000000",
+  "vscode-open-project.projects": {
+    "practice": "C:\\Users\\e101800\\OneDrive - RSM\\SFCC Practice"
+  },
+  "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}${separator}${appName}",
+  "window.zoomLevel": 1,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f87",
+    "statusBar.noFolderBackground": "#005f87",
+    "statusBar.debuggingBackground": "#005f87",
+    "editorWhitespace.foreground": "#8806065b"
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.settings": true
+  },
+  "editor.suggestSelection": "first",
+  "editor.detectIndentation": false,
+  "extension.prophet.htmlhint.enabled": false,
+  "editor.renderControlCharacters": true,
+  "extensions.ignoreRecommendations": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "json.format.enable": false,
+  "editor.formatOnSave": true,
+  "editor.trimAutoWhitespace": false
 }

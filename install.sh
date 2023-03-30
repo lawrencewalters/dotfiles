@@ -5,8 +5,8 @@ set -eu
 export MSYS=winsymlinks:nativestrict
 
 
-DOTDIR="/mnt/c/Users/lwalters/dotfiles"
-LINUXDIR="/mnt/c/Users/lwalters/dotfiles/linux"
+DOTDIR="/mnt/c/Users/e101800/dotfiles"
+LINUXDIR="/mnt/c/Users/e101800/dotfiles/linux"
 BINDIR="${HOME}/bin"
 
 noisy_link () {
